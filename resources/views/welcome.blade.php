@@ -65,19 +65,19 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
+                <div class="top-right links">
+                        <a href="/es">Es</a>
+                        <a href="/en">En</a>
+                        <a href="#">@lang('index.links.home')</a>
+
+                        <a href="#">@lang('index.links.login')</a>
+
+
+                            <a href="#">@lang('index.links.Register')</a>
+
+
                 </div>
-            @endif
 
             <div class="content">
                 <div class="title m-b-md">
